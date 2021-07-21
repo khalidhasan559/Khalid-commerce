@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="C:\bootstrap-5.0.2-dist\css\bootstrap.rtl.min.css">
     <style>
        
-       .carousel-bg{
+       .orange-bg{
         background-color:#feeae9;
         padding: 20px 40px;
         border-radius: 10px;
@@ -20,7 +20,69 @@
       .container{
         margin-bottom: 100px;
       }
+      .font-bold{
+        text-align: start;
+        font-size: 30px;
+        color: black;
+      }
 
+
+
+
+
+
+     .cat-1{
+       background-image:linear-gradient(90deg,rgb(255, 166, 0),rgb(234, 204, 148));
+     }
+      .cat-2{
+       background-image:linear-gradient(90deg,#de2267,rgb(221, 87, 129));}
+       .cat-3{
+       background-image:linear-gradient(90deg,rgb(62, 67, 226),rgb(0, 38, 255));}
+          
+    
+     .categories img{
+       height: 110px;
+     }
+     .cat-2, .cat-1, .cat-3 {
+       height: 130px;
+       padding: 20px;
+       border-radius: 10px;
+       color: white;
+       transition: all 300ms;
+
+     }
+  
+     a{
+       text-decoration: none;
+     }
+     
+     .cat-1:hover{
+       color:rgb(65, 0, 0);
+       padding: 20px 30px;
+      
+
+     }
+     .cat-2:hover{
+      padding: 20px 30px;
+       color: white;
+
+     }
+     .cat-3:hover{
+      color: white;
+      padding: 20px 30px;
+     }
+
+
+
+     .card{
+       border: none;
+       box-shadow: 5px 5px 25px gray;
+       border-radius: 10px;
+     }
+    
+     .align-center{
+       height: 300px;
+     }
     </style>
 </head>
 <body>
@@ -34,7 +96,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                <a class="nav-link active" aria-current="page" href="#Home">home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Shoes">Shoes</a>
@@ -53,7 +115,7 @@
 
 
 <div class="container banner">
-    <div id="carouselExampleInterval" class="carousel slide carousel-bg " data-bs-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide orange-bg " data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000">
             <div class="row align-items-center">
@@ -94,9 +156,140 @@
                   </div>
               </div>            
           </div>
+        </div>        
+      </div>
+</div>
+
+<div class="container categories">
+  <div class="row">
+    <div class="col-4 ">
+      <div>
+        <a class="d-flex justify-content-between align-items-center cat-1" href="">
+          <h1>Watch</h1>
+          <img src="panda-commerce/categories/watch.png" alt="">
+        </a>        
+      </div>
+    </div>
+    <div class="col-4 ">
+      <div>
+       <a class="d-flex justify-content-between align-items-center cat-2" href="#">
+         <h1>Bag</h1>
+         <img src="panda-commerce/categories/bag.png" alt="">
+       </a>
+      </div>
+    </div>    
+      <div class="col-4">
+        <div>          
+          <a class="d-flex justify-content-between align-items-center cat-3" href="#"> <h1> Shoes
+          </h1> <img src="panda-commerce/categories/shoes.png" alt=""></a>
+        </div>
+      </div>    
+  </div>
+</div>
+
+
+<div class="container Shoes" id="Shoes">
+  <h3>Shoes</h3>
+  <div class="row">
+    <div class="card-desk col-4">
+      <div class="card">
+       <img class="card-img-top" src="panda-commerce/shoes/shoe-1.png" alt="">
+        <div class="card-body">
+          <h3 class="card-title">supply 350</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quis aspernatur veritatis vero laudantium est commodi omnis, nemo minima, qui praesentium quos incidunt, nam at fuga esse assumenda! Aliquam, sed.</p>
+          <h3>$120</h3>
+          <a class="btn  btn-outline-danger" href="#">BUY NOW</a>
+        </div>        
+      </div>      
+    </div>
+    <div class="card-disk col-4">
+      <div class="card">
+        <img class="card-img-top" src="panda-commerce/shoes/shoe-2.png" alt="">
+        <div class="card-body">
+          <h3 class="card-title">suppy 360</h3>
+          <p class="card-text">
+          Lorem, ipsum dolor sit amet  quia debitis accusantium quidem incidunt nobis? Illum consequatur, sint asperiores delectus nihil eligendi nobis sunt rem quasi labore distinctio. Deleniti.
+        </p>     
+        <h3>$320</h3>
+        <a class="btn  btn-outline-danger" href="#">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-disk col-4">
+      <div class="card">
+        <img class="card-img-top" src="panda-commerce/shoes/shoe-3.png" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Red Max</h3>
+          <p class="card-text">
+          Lorem, ipsum dolor sit ame ami ar vat khabo na ami shudhu mach khabo
+            quidem incidunt nobis? Illum consequatur, sint asperiores delectus nihil eligendi nobis sunt rem quasi labore distinctio. Deleniti.
+        </p>     
+        <h3>$350</h3>
+        <a class="btn  btn-outline-danger" href="#">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container" id="Backpack">
+  <h3>Backpack</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="panda-commerce/bags/bag-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Red Bag</h5>
+          <h3>$140</h3>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <h3></h3>
+        <div class="card-footer">
+         <a class="btn  btn-outline-danger" href="#">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="panda-commerce/bags/bag-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blue Bag</h5>
+          <h3>$325</h3>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>          
         </div>
         
+        <div class="card-footer">
+         <a class="btn  btn-outline-danger" href="#">BUY NOW</a>
+        </div>
       </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="panda-commerce/bags/bag-3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Black Bag</h5>
+          <h3>$125</h3>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional      content. This card has even longer content.</p>          
+        </div>
+        <div class="card-footer">
+         <a class="btn  btn-outline-danger" href="#">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container d-flex align-items-center d-flex justify-content-center orange-bg align-center" id="Subscribe">
+  <div>
+    <h3>LET'S STAY IN TOUCH</h3>
+    <P>Get updates on sales specials and more</P>
+    <input class="form-control" type="gmail"><br>
+    <button class="btn btn-danger">Submit</button>
+  </div>
 </div>
 
 
